@@ -8,8 +8,21 @@ h1 {
   font-size: 50px;
 }
 
+#poga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #add-to-do {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 175px;
+  height: 50px;
+  font-size: 25px;
+}
+
+#popup {
+  display: none;
 }
