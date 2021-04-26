@@ -72,7 +72,7 @@ input#termiņš {
   flex-wrap: wrap;
 }
 
-.uzdevumi2 {
+.uzdevumi {
   display: flex;
   flex-direction: column;
   align-items: center;
