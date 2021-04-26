@@ -1,4 +1,4 @@
-document.getElementById('jauns_to-do').addEventListener('click', () => {
+document.getElementById('jaunsUzdevums').addEventListener('click', () => {
   console.log("Poga nospiesta!");
 
   let popup = document.getElementById('popup');
