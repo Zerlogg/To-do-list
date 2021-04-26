@@ -1,5 +1,5 @@
-body{
-  background-color: rgb(31, 133, 39);
+body {
+  background-color: rgb(101, 172, 73);
 }
 
 h1 {
@@ -14,15 +14,19 @@ h1 {
   align-items: center;
 }
 
-#add-to-do {
+#jauns_to-do {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 175px;
+  width: 200px;
   height: 50px;
   font-size: 25px;
 }
 
 #popup {
   display: none;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(54, 99, 8);
+  font-size: 30px;
 }
