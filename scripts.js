@@ -14,11 +14,24 @@ document.getElementById('pievienotUzdevumu').addEventListener('click', () => {
   uzdevums.value = ""
   termiņš.value = ""
 
-  uzdevumi2.push(uzdevumi)
+  uzdevumi2.push(uzdevumi);
+
+  render();
 })
 
 
 function render() {
-  let uzdevumi3 = document.getElementById('uzdevumi');
+  let uzdevumi3 = document.getElementById('uzdevumi3');
+  uzdevumi3.innerHTML = "";
+
+  for(let i = 0; i < uzdevumi2.length; i++) {
+    let uzdevumi = `
+    <div class="uzdevumi2"> 
+      <h3>Uzdevums: ${uzdevumi2[i].uzdevums}</h4>
+      <h4>Termiņš: ${uzdevumi2[i].termiņš}</h4> 
+    </div>`;
+  uzdevumi3.innerHTML += uzdevumi;
+  }
+
   
 }
