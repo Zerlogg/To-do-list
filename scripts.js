@@ -1,24 +1,23 @@
-const POP_UP = document.getElementById('popup');
+const POP_UP = document.getElementById("popup");
 let uzdevumi2 = [];
 
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
   uzdevumi2 = JSON.parse(localStorage.getItem("uzdevumi2") || "[]");
-  console.log(uzdevumi2)
+  console.log(uzdevumi2);
   render();
 });
 
-document.getElementById('jaunsUzdevums').addEventListener('click', () => {
-  POP_UP.style.display = 'block'
-
+document.getElementById("jaunsUzdevums").addEventListener("click", () => {
+  POP_UP.style.display = "block";
 })
 
-document.getElementById('pievienotUzdevumu').addEventListener('click', () => {
-  POP_UP.style.display = 'none'
+document.getElementById("pievienotUzdevumu").addEventListener("click", () => {
+  POP_UP.style.display = "none";
 
   let uzdevumi = {uzdevums: uzdevums.value, termiņš: termiņš.value};
   
-  uzdevums.value = ""
-  termiņš.value = ""
+  uzdevums.value = "";
+  termiņš.value = "";
 
   uzdevumi2.push(uzdevumi);
 
@@ -26,7 +25,7 @@ document.getElementById('pievienotUzdevumu').addEventListener('click', () => {
 })
 
 function render() {
-  let uzdevumi3 = document.getElementById('uzdevumi3');
+  let uzdevumi3 = document.getElementById("uzdevumi3");
   uzdevumi3.innerHTML = "";
 
   for(let i = 0; i < uzdevumi2.length; i++) {
